@@ -1,0 +1,29 @@
+main {
+  padding-top: 6rem;
+}
+
+section {
+  background-color: transparent;
+}
+
+#gallery {
+  background-color: rgba(0, 0, 0, 0.75);
+  width: 100vw;
+  min-height: calc(100vh - 6rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 5rem;
+}
+
+#image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+}
+
+#image-grid img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    border-radius: .5rem;
+}
