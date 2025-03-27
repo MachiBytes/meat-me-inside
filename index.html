@@ -10,6 +10,27 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     />
+    <style>
+      #hero {
+        background-image: url(assets/camera_roll/bar_island.jpg);
+        animation: background-rotation 10s infinite steps(1);
+      }
+
+      @keyframes background-rotation {
+        0% {
+          background-image: url(assets/camera_roll/bar_island.jpg);
+        }
+        33% {
+          background-image: url(assets/camera_roll/steak.jpg);
+        }
+        66% {
+          background-image: url(assets/camera_roll/wine_cellar.jpg);
+        }
+        100% {
+          background-image: url(assets/camera_roll/bar_island.jpg);
+        }
+      }
+    </style>
   </head>
   <body>
     <nav>
