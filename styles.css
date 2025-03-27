@@ -4,8 +4,8 @@
   --dark-color: #0f0f0f;
   --light-color: #fbfefc;
   --accent-color: #da434b;
-  --gray-color: #838383;
-  --award-count: 4;
+  --gray-color: #c5c0c0;
+  --award-count: 6;
   --animation-duration: 15s;
 }
 
@@ -18,6 +18,10 @@
   font-weight: 500;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+
+html {
+  font-size: 16px;
 }
 
 h1 {
@@ -38,6 +42,11 @@ h3 {
 
 h4 {
   font-weight: 300;
+}
+
+h5 {
+  font-weight: 900;
+  font-size: 1.5rem;
 }
 
 p {
@@ -114,6 +123,7 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: .5rem;
 }
 
 .section-header hr {
@@ -127,6 +137,7 @@ section {
   height: 100vh;
   display: flex;
   justify-content: center;
+  animation: background-rotation 10s infinite steps(1);
 }
 
 #hero #hero-content {
@@ -150,6 +161,13 @@ section {
 
 #hero #hero-content h4 {
   margin-bottom: 2rem;
+}
+
+@keyframes background-rotation {
+  0% {background-image: url(assets/camera_roll/bar_island.jpg);}
+  33% {background-image: url(assets/camera_roll/steak.jpg);}
+  66% {background-image: url(assets/camera_roll/wine_cellar.jpg);}
+  100% {background-image: url(assets/camera_roll/bar_island.jpg);}
 }
 
 #awards {
@@ -211,6 +229,18 @@ section {
       -1
   );
 }
+.award5 {
+  animation-delay: calc(
+    var(--animation-duration) / var(--award-count) * (var(--award-count) - 5) *
+      -1
+  );
+}
+.award6 {
+  animation-delay: calc(
+    var(--animation-duration) / var(--award-count) * (var(--award-count) - 6) *
+      -1
+  );
+}
 
 /* Keyframes for scrolling effect */
 @keyframes scroll {
@@ -267,5 +297,62 @@ section {
     flex-direction: column;
     justify-content: center;
     padding-right: 3rem;
-    gap: 2rem;
+}
+
+#about-text {
+  margin-bottom: 2rem;
+}
+
+#menu {
+  color: var(--dark-color);
+  padding: 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#menu-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+#menu-grid .menu-card {
+  position: relative;
+  border-radius: .5rem;
+  overflow: hidden;
+  background-color: var(--light-color);
+}
+
+.menu-card img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  z-index: 1;
+}
+
+.dark-overlay {
+  position: absolute;
+  width: 100%;
+  aspect-ratio: 1/1;
+  z-index: 2;
+  top: 0;
+  background: linear-gradient(to top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.3) 25%, rgba(255, 255, 255, 0) 50%);
+}
+
+.menu-text {
+  padding: 1rem;
+}
+
+.menu-text h5, .menu-text p {
+  z-index: 5;
+}
+
+.menu-text h5 {
+  margin-bottom: .5rem;
+  text-transform: uppercase;
+}
+
+.menu-text p {
+  font-size: .75rem;
 }
