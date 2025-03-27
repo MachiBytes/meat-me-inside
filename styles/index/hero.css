@@ -1,0 +1,46 @@
+#hero {
+  background-image: url(../../assets/camera_roll/bar_island.jpg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  animation: background-rotation 10s infinite steps(1);
+}
+
+#hero #hero-content {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#hero #hero-content img {
+  height: 10rem;
+}
+
+#hero #hero-content hr {
+  width: 25rem;
+}
+
+#hero #hero-content h4 {
+  margin-bottom: 2rem;
+}
+
+@keyframes background-rotation {
+  0% {
+    background-image: url(../../assets/camera_roll/bar_island.jpg);
+  }
+  33% {
+    background-image: url(../../assets/camera_roll/steak.jpg);
+  }
+  66% {
+    background-image: url(../../assets/camera_roll/wine_cellar.jpg);
+  }
+  100% {
+    background-image: url(../../assets/camera_roll/bar_island.jpg);
+  }
+}
