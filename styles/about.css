@@ -185,6 +185,14 @@ section {
   text-align: justify;
 }
 
+#about-text h3 {
+  margin-bottom: 2rem;
+}
+
+#about-text p {
+  line-height: 1.3rem;
+}
+
 #about-text {
   margin-bottom: 2rem;
 }
