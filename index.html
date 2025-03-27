@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meat Me Inside | Family Steakhouse</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <img src="assets/logo-transparent.png" alt="Meat Me Inside Logo" />
+      <ul id="nav-links">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="hero">
+        <div id="hero-content">
+          <img src="assets/logo-transparent.png" alt="Meat Me Inside Logo" />
+          <h1>MEAT ME INSIDE</h1>
+          <hr />
+          <h4>EST. 2025</h4>
+          <a href="menu.html"><button>CHECK OUR MENU</button></a>
+        </div>
+      </section>
+      <section id="awards">
+        <div class="section-header">
+          <hr />
+          <h2>AWARDS</h2>
+          <hr />
+        </div>
+        <div class="marquee">
+          <img
+            class="award1"
+            src="assets/awards/st-pellegrino&aequa-panna.png"
+            alt="Sample Award"
+          />
+          <img
+            class="award2"
+            src="assets/awards/le-grandes-tables-du-monde.png"
+            alt="Sample Award"
+          />
+          <img
+            class="award3"
+            src="assets/awards/wine-spectator-award-of-excellence.png"
+            alt="Sample Award"
+          />
+          <img
+            class="award4"
+            src="assets/awards/michelin-2-star.png"
+            alt="Sample Award"
+          />
+          <img
+            class="award5"
+            src="assets/awards/empresa-certificada.png"
+            alt="Sample Award"
+          />
+          <img
+            class="award6"
+            src="assets/awards/michelin-2-star.png"
+            alt="Sample Award"
+          />
+        </div>
+      </section>
+      <section id="about">
+        <section id="about-content">
+          <section id="about-content-image">
+            <img src="assets/about3.jpg" alt="Chef Cooking Display" />
+          </section>
+          <section id="about-content-text">
+            <section class="section-header">
+              <hr />
+              <h2>ABOUT</h2>
+              <hr />
+            </section>
+            <section id="about-text">
+              <h3>MEAT ME INSIDE</h3>
+              <p>
+                Rated as one of the best steakhouses in Manila, Meat Me Inside
+                currently has twenty-one locations worldwide. We pride ourselves
+                in our renowned USDA Prime Black Angus Steak, fresh seafood, and
+                award-winning wine cellar.
+              </p>
+            </section>
+            <a href="about.html"><button>READ MORE</button></a>
+          </section>
+        </section>
+      </section>
+      <section id="menu">
+        <section class="section-header">
+          <hr />
+          <h2>BESTSELLERS</h2>
+          <hr />
+        </section>
+        <section id="menu-grid">
+          <div class="menu-card">
+            <img src="assets/menu/RIBEYE-12OZ-GRILLED-SHRIMP.webp" alt="" />
+            <div class="dark-overlay"></div>
+            <div class="menu-text">
+              <h5>Ribeye 12oz & Grilled Shrimp</h5>
+              <p>
+                A thick, juicy 12oz ribeye, perfectly seared for a caramelized
+                crust and bursting with rich, buttery flavor. Paired with smoky,
+                flame-grilled shrimp brushed with garlic butter, this
+                surf-and-turf masterpiece melts in your mouth with every bite.
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="assets/menu/BACON-CHEESEBURGER.webp" alt="" />
+            <div class="dark-overlay"></div>
+            <div class="menu-text">
+              <h5>Bacon Cheeseburger</h5>
+              <p>
+                A juicy, flame-grilled beef patty dripping with savory goodness,
+                topped with crispy, smoky bacon and oozing melted cheddar.
+                Sandwiched between a toasted brioche bun, every bite is a
+                perfect balance of crunch, creaminess, and pure burger bliss.
+              </p>
+            </div>
+          </div>
+          <div class="menu-card">
+            <img src="assets/menu/GRILLED-SALMON.webp" alt="" />
+            <div class="dark-overlay"></div>
+            <div class="menu-text">
+              <h5>Grilled Salmon</h5>
+              <p>
+                Tender, flaky salmon fillet kissed by the flames, with a crispy,
+                golden crust and a melt-in-your-mouth center. Brushed with
+                buttery herbs and a hint of citrus, every bite is a perfect
+                blend of smoky, savory, and fresh flavors.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section id="contact">
+        <section class="section-header">
+          <hr />
+          <h2>CONTACT</h2>
+          <hr />
+        </section>
+        <section id="contact-content">
+          <div id="map" style="height: 400px"></div>
+          <div id="contact-info">
+            <h5>Address</h5>
+            <p>
+              G/F, The Podium, 18 ADB Ave, Ortigas Center, Mandaluyong, 1550
+              Metro Manila
+            </p>
+            <br />
+            <h5>Operation Hours</h5>
+            <p>Monday to Sunday | 6:00 A.M. to 12:00 A.M.</p>
+            <br />
+            <h5>Contacts</h5>
+            <p>service@meatmeinside.com</p>
+            <p>02-8532-6789</p>
+            <p>(+63) 917-123-4567</p>
+            <p>(+63) 998-765-4321</p>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      &copy; 2025 Meat Me Inside. All rights reserved.
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("map").setView([14.584985, 121.059572], 17); // Set initial position and zoom
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      L.marker([14.584985, 121.059572])
+        .addTo(map)
+        .bindPopup("Visit our physical store!")
+        .openPopup();
+    </script>
+  </body>
+</html>
