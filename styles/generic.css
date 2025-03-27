@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --dark-color: #0f0f0f;
+  --light-color: #fbfefc;
+  --accent-color: #da434b;
+  --gray-color: #c5c0c0;
+  --award-count: 6;
+  --animation-duration: 15s;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+html {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: -0.8rem;
+}
+
+h2 {
+  font-size: 2rem;
+  color: var(--gray-color);
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+h4 {
+  font-weight: 300;
+}
+
+h5 {
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+
+p {
+  font-weight: 300;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  background-image: url(../assets/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  height: 6rem;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 0.3rem 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav img {
+  max-height: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+nav ul li.active {
+  color: var(--accent-color);
+}
+
+button {
+  padding: 0.6rem;
+  background-color: transparent;
+  border: var(--accent-color) 1px solid;
+  color: var(--accent-color);
+  border-radius: 0.2rem;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: var(--light-color);
+}
+
+section {
+  background-color: var(--dark-color);
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.section-header hr {
+  width: 5rem;
+  height: 2px;
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  padding-bottom:  3rem;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .social-icon img {
+  width: 2rem;
+  height: 2rem;
+}

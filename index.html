@@ -4,7 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meat Me Inside | Family Steakhouse</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/generic.css" />
+    <link rel="stylesheet" href="styles/index/hero.css" />
+    <link rel="stylesheet" href="styles/index/awards.css" />
+    <link rel="stylesheet" href="styles/index/about.css" />
+    <link rel="stylesheet" href="styles/index/menu.css" />
+    <link rel="stylesheet" href="styles/index/contact.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -14,7 +19,7 @@
     <nav>
       <img src="assets/logo-transparent.png" alt="Meat Me Inside Logo" />
       <ul id="nav-links">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="menu.html">Menu</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -169,20 +174,18 @@
       </section>
     </main>
     <footer>
+      <div class="social-icons">
+        <a href="#" class="social-icon"
+          ><img src="assets/facebook.png" alt="Facebook"
+        /></a>
+        <a href="#" class="social-icon"
+          ><img src="assets/instagram.png" alt="Instagram"
+        /></a>
+        <a href="#" class="social-icon"><img src="assets/whatsapp.png" alt="WhatsApp" /></a>
+      </div>
       &copy; 2025 Meat Me Inside. All rights reserved.
     </footer>
     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-    <script>
-      var map = L.map("map").setView([14.584985, 121.059572], 17); // Set initial position and zoom
-
-      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: "&copy; OpenStreetMap contributors",
-      }).addTo(map);
-
-      L.marker([14.584985, 121.059572])
-        .addTo(map)
-        .bindPopup("Visit our physical store!")
-        .openPopup();
-    </script>
+    <script src="scripts/map.js"></script>
   </body>
 </html>
