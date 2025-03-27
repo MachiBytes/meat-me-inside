@@ -19,7 +19,8 @@
   position: relative;
   border-radius: 0.5rem;
   overflow: hidden;
-  background-color: var(--light-color);
+  background-color: var(--dark-color);
+  color: var(--light-color);
 }
 
 .menu-card img {
@@ -28,7 +29,7 @@
   z-index: 1;
 }
 
-.light-overlay {
+.dark-overlay {
   position: absolute;
   width: 100%;
   aspect-ratio: 1/1;
@@ -36,9 +37,9 @@
   top: 0;
   background: linear-gradient(
     to top,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(255, 255, 255, 0.3) 25%,
-    rgba(255, 255, 255, 0) 50%
+    rgba(15, 15, 15, 1) 0%,
+    rgba(15, 15, 15, 0.3) 25%,
+    rgba(15, 15, 15, 0) 50%
   );
 }
 
