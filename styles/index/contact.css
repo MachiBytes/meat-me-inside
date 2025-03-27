@@ -17,10 +17,3 @@
   flex: 1;
   width: 50%;
 }
-
-footer {
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  text-align: center;
-  padding-bottom: 3rem;
-}

@@ -1,6 +1,6 @@
 #menu {
   color: var(--dark-color);
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 5rem 0 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;

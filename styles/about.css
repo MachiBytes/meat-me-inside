@@ -190,8 +190,5 @@ section {
 }
 
 footer {
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  text-align: center;
-  padding: 3rem 0;
+  padding-top: 3rem;
 }

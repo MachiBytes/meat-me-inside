@@ -113,10 +113,6 @@ button:hover {
   color: var(--light-color);
 }
 
-main {
-  margin-top: -6rem;
-}
-
 section {
   background-color: var(--dark-color);
 }
@@ -131,4 +127,23 @@ section {
 .section-header hr {
   width: 5rem;
   height: 2px;
+}
+
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  text-align: center;
+  padding-bottom:  3rem;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+footer .social-icon img {
+  width: 2rem;
+  height: 2rem;
 }
