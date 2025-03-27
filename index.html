@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Meat Me Inside | Family Steakhouse</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
   </head>
   <body>
     <nav>
@@ -138,17 +142,47 @@
         </section>
       </section>
       <section id="contact">
-        <div id="map"></div>
-        <div id="contact-info">
-          <p>Address</p>
-        </div>
+        <section class="section-header">
+          <hr />
+          <h2>CONTACT</h2>
+          <hr />
+        </section>
+        <section id="contact-content">
+          <div id="map" style="height: 400px"></div>
+          <div id="contact-info">
+            <h5>Address</h5>
+            <p>
+              G/F, The Podium, 18 ADB Ave, Ortigas Center, Mandaluyong, 1550
+              Metro Manila
+            </p>
+            <br />
+            <h5>Operation Hours</h5>
+            <p>Monday to Sunday | 6:00 A.M. to 12:00 A.M.</p>
+            <br />
+            <h5>Contacts</h5>
+            <p>service@meatmeinside.com</p>
+            <p>02-8532-6789</p>
+            <p>(+63) 917-123-4567</p>
+            <p>(+63) 998-765-4321</p>
+          </div>
+        </section>
       </section>
     </main>
     <footer>
-      <p>Operation Hours:</p>
-      <p>Landline Number:</p>
-      <p>Mobile Number:</p>
-      <p>Email:</p>
+      &copy; 2025 Meat Me Inside. All rights reserved.
     </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+      var map = L.map("map").setView([14.584985, 121.059572], 17); // Set initial position and zoom
+
+      L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: "&copy; OpenStreetMap contributors",
+      }).addTo(map);
+
+      L.marker([14.584985, 121.059572])
+        .addTo(map)
+        .bindPopup("Visit our physical store!")
+        .openPopup();
+    </script>
   </body>
 </html>
